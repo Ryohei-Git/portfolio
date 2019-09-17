@@ -8,84 +8,80 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!--css jquery file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="portfolio.js"></script>
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
-    <title>portfolio</title>
+
+    <title>Portfolio.</title>
   </head>
   <body>
-    <!-- ナビゲーション -->
-    <nav class="navbar navbar-expand-lg navbar-light nav" style="background-color: #191970;">
-      <a class="navbar-brand" href="#"><span class = "white">Navbar</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icson"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"><span class = "white">Home</span><span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><span class = "white">Link</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#"><span class = "white">Disabled</span></a>
-          </li>
-        </ul>
-
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-    <header>
-      <div class="jumbotron jumbotron-fluid home">
-        <div class="container">
-          <div class = "title">
-            <h1>Portfolio.</h1>
-          </div>
-          <div class = "name">
-            <p>Ryohei Mori</p>
+      <div class="overlayMenu">
+        <div class="overlayMenuInner">
+          <div class="overlayMenuHeader">Menu</div>
+            <div class="overlayMenuItem">
+              <ul>
+                <li><a href="#">Profile.</a></li>
+                <li><a href="#">Work.</a></li>
+                <li><a href="#">Like.</a></li>
+              </ul>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="overlayMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    <header>
+
+   	  <div class = "container">
+        <div class = "title fadein-title">
+          <h1>Portfolio.</h1>
+        </div>
+        <div class = "name fadein-name">
+          <p>Ryohei Mori</p>
+        </div>
+	    <div class = "col-md-2 fadein-line offset-md-1">
+	      <hr>
+	    </div>
       </div>
     </header>
-      <div class="container enter">
+      <div class="container">
         <div class="row">
-          <div class="col-md-5 col-size5-1" ></div>
-          <div class="col-md-6 col-size6 offset-md-1" >
-            <div class = "theme">Profile.</div>
+          <div class="col-md-4 contents1 hover-contents fadein-contents1" >
+          	<a href = "#">
+			  <div class = "mask">
+          		<div class = "text">Profile.</div>
+          	  </div>
+          	</a>
           </div>
-        </div>
-      </div>
-
-      <div class="container enter">
-        <div class="row">
-          <div class="col-md-6 col-size6" >
-            <div class = "theme">Skill.</div>
+          <div class="col-md-4 contents2 hover-contents fadein-contents2" >
+          	<a href = "#">
+            	<div class = "mask">
+          		<div class = "text">Work.</div>
+          		</div>
+          	</a>
           </div>
-          <div class="col-md-5 col-size5-2 offset-md-1"></div>
-        </div>
-      </div>
-
-      <div class="container enter">
-        <div class="row">
-          <div class="col-md-5 col-size5-3" ></div>
-          <div class="col-md-6 col-size6 offset-md-1" >
-            <div class = "theme">Like.</div>
+          <div class="col-md-4 contents3 hover-contents fadein-contents3" >
+          	<a href = "#">
+	          	<div class = "mask">
+	          		<div class = "text">Like.</div>
+	          	</div>
+	         </a>
           </div>
         </div>
       </div>
 
       <footer class="container-fluid">
-        <small>Copyright (C) 2019 RyoheiMori All Rights Reserved.</small>
+        <small>Copyright (C) RyoheiMori All Rights Reserved.</small>
       </footer>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
   </body>
 </html>
